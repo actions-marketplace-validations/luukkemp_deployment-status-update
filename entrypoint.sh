@@ -42,7 +42,8 @@ curl --fail \
     "log_url": "${GITHUB_ACTIONS_RUN_URL}",
     "description": "${INPUT_DESCRIPTION}",
     "auto_inactive": ${INPUT_AUTO_INACTIVE},
-    "environment_url": "${INPUT_ENVIRONMENT_URL}"
+    "environment_url": "${INPUT_ENVIRONMENT_URL}",
+    "environment": "${INPUT_ENVIRONMENT}"
 }
 EOF
 
