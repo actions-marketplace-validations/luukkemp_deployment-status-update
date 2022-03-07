@@ -1,8 +1,5 @@
 #!/bin/bash -xe
 
-# Install required tools
-apt-get update && apt-get install -y jq curl ca-certificates
-
 get_from_event() {
   jq -r "$1" "${GITHUB_EVENT_PATH}"
 }
