@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/ash -xe
 
 # Install required tools
 apt-get update && apt-get install -y jq curl ca-certificates

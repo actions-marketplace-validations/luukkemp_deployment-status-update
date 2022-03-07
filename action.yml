@@ -41,6 +41,8 @@ outputs:
   payload:
     description: 'Payload'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'composite'
+  steps:
+  - run: $GITHUB_ACTION_PATH/script.sh
+    shell: bash
 
